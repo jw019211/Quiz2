@@ -8,6 +8,12 @@
 	John Dolan			Ohio University 
 ********************************************************************/
 
+/**
+*	@file tarray.h
+*	@author John Dolan
+*	@date Fall 2014
+*/
+
 #include<iostream>
 
 template<class T>
