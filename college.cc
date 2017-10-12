@@ -11,6 +11,11 @@
 #include<string>
 using namespace std;
 
+/**
+*	@file college.cc
+*	@author Matthew Aberegg
+*	@date 8 Oct 2015
+*/
 College::College(std::string s){
 	name = s;
 	head = NULL;
