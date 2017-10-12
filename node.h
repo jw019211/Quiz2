@@ -5,6 +5,12 @@
                 John Dolan  		March 2009
 *************************************************************************/
 
+/**
+*	@file node.h
+*	@author John Dolan
+*	@date March 2009
+*/
+
 #ifndef NODE_H
 #define NODE_H
 #include "course.h"
