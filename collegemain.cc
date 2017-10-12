@@ -12,6 +12,12 @@
 	John Dolan			Spring 2015
 **********************************************************/
 
+/**
+*	@file collegemain.cc
+*	@author John Dolan
+*	@date Spring 2015
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
