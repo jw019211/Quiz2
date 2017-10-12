@@ -3,6 +3,13 @@
 	course.
 		John Dolan		School of EECS		Summer2013
 **************************************************************************/
+
+/**
+*	@file course.cc
+*	@author John Dolan
+*	@date Summer 2013
+*/
+
 #include "course.h"
 #include<cstdlib>
 #include<iostream>
@@ -13,6 +20,15 @@ using namespace std;
 course::course(){
     hours = 0.0;
 }
+
+/**
+*	/breif gathers the users input
+*	/details Takes a user input stream and cconverts it into a course number
+*		 a grade recieved, and an amount of credit hours and outputs
+*		 the values to the screen
+*	/param a stream
+*	/return none
+*/
 
 void course::input(std::istream& ins){
     if(ins == cin){
@@ -39,6 +55,15 @@ void course::input(std::istream& ins){
     }
 }
 
+/**
+*	/breif outputs a course object
+*	/details outputs the course number, grade, and credit hours of a course object.
+*		 can be used to output to either the screeen, or a file depending on the
+*		 ostream given to it.
+*	/param a stream
+*	/return none
+*/
+
 void course::output(std::ostream& outs)const{
     if(outs == cout){
 	outs<<"Course Number:"<<course_number<<endl;
@@ -52,6 +77,13 @@ void course::output(std::ostream& outs)const{
       }
 }
 
+/**
+*	/breif converts a lettergrade to a value
+*	/details Takes a given letter value and runs it through a series of if statements
+*		 to convert it to its associated numerical value that is returned
+*	/param none
+*	/return a double
+*/
 
 double course::get_number_grade()const{
     if(grade == "A") return 4.0;
